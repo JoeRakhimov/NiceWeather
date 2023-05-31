@@ -1,4 +1,4 @@
-package com.joerakhimov.niceweather.ui.theme
+package com.joerakhimov.niceweather.presentation.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
