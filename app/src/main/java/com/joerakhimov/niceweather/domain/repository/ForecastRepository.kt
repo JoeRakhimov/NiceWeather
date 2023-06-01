@@ -1,10 +1,10 @@
 package com.joerakhimov.niceweather.domain.repository
 
-import com.joerakhimov.niceweather.domain.entity.Forecast
+import com.joerakhimov.niceweather.domain.entity.ForecastEntity
 
 interface ForecastRepository {
 
-    fun getForecast(): Forecast
-    fun getForecastByLocation(latitude: Double, longitude: Double): Forecast
+    suspend fun getForecast(): ForecastEntity
+    suspend fun getForecastByLocation(latitude: Double, longitude: Double): ForecastEntity
 
 }

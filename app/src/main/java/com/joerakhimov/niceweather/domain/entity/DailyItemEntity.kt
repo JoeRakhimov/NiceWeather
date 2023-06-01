@@ -1,6 +1,6 @@
 package com.joerakhimov.niceweather.domain.entity
 
-data class DailyEntity(
+data class DailyItemEntity(
     val date: String,
     val tempMin: Double,
     val tempMax: Double,
