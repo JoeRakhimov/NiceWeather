@@ -4,7 +4,7 @@ import com.joerakhimov.niceweather.data.dto.ForecastDto
 import com.joerakhimov.niceweather.domain.entity.DailyItemEntity
 import com.joerakhimov.niceweather.domain.entity.ForecastEntity
 
-class ForecastMapper {
+class ForecastDtoMapper {
 
     fun mapToEntity(forecastDto: ForecastDto): ForecastEntity {
         return ForecastEntity(
