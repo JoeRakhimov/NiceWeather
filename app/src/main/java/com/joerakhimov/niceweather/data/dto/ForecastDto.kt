@@ -25,11 +25,11 @@ data class CurrentDto(
 
 data class DailyItemDto(
 	val date: String? = null,
-	val tempMin: Double? = null,
+	val temp_min: Double? = null,
 	val condition: String? = null,
 	val hours: List<HoursItemDto?>? = null,
 	val icon: String? = null,
-	val tempMax: Double? = null
+	val temp_max: Double? = null
 )
 
 data class LocationDto(

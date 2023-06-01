@@ -11,8 +11,8 @@ class ForecastDtoMapper {
             daily = forecastDto.daily?.map {
                 DailyItemEntity(
                     date = it?.date ?: "",
-                    tempMin = it?.tempMin ?: 0.0,
-                    tempMax = it?.tempMax ?: 0.0,
+                    tempMin = it?.temp_min ?: 0.0,
+                    tempMax = it?.temp_max ?: 0.0,
                     condition = it?.condition ?: "",
                     icon = it?.icon ?: ""
                 )
