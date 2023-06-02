@@ -1,4 +1,4 @@
-package com.joerakhimov.niceweather.presentation.ui.forecast
+package com.joerakhimov.niceweather.presentation.compose.daily
 
 import com.joerakhimov.niceweather.presentation.model.DailyItemModel
 

@@ -5,5 +5,6 @@ data class DailyItemModel(
     val tempMin: Double,
     val tempMax: Double,
     val condition: String,
-    val icon: String
+    val icon: String,
+    val hourly: List<HourlyItemModel>
 )

@@ -5,5 +5,6 @@ data class DailyItemEntity(
     val tempMin: Double,
     val tempMax: Double,
     val condition: String,
-    val icon: String
+    val icon: String,
+    val hourly: List<HourlyItemEntity>
 )

@@ -1,4 +1,4 @@
-package com.joerakhimov.niceweather.presentation.ui.theme
+package com.joerakhimov.niceweather.presentation.compose.theme
 
 import android.app.Activity
 import android.os.Build

@@ -1,4 +1,4 @@
-package com.joerakhimov.niceweather.presentation.ui.forecast
+package com.joerakhimov.niceweather.presentation.compose.daily
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
@@ -18,13 +18,13 @@ import androidx.compose.foundation.lazy.items
 import androidx.hilt.navigation.compose.hiltViewModel
 import coil.compose.AsyncImage
 import com.joerakhimov.niceweather.presentation.model.DailyItemModel
-import com.joerakhimov.niceweather.presentation.ui.components.NoNetwork
+import com.joerakhimov.niceweather.presentation.compose.components.NoNetwork
 
 @Composable
 fun ForecastScreen(
     onUserClick: (String) -> Unit
 ) {
-    val viewModel = hiltViewModel<ForecastViewModel>()
+    val viewModel = hiltViewModel<DailyForecastViewModel>()
     val uiState = viewModel.uiState
 
     if (uiState.offline) {

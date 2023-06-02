@@ -1,4 +1,4 @@
-package com.joerakhimov.niceweather.presentation.ui
+package com.joerakhimov.niceweather.presentation.compose
 
 import androidx.compose.runtime.Composable
 import androidx.lifecycle.Lifecycle
@@ -7,7 +7,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
-import com.joerakhimov.niceweather.presentation.ui.forecast.ForecastScreen
+import com.joerakhimov.niceweather.presentation.compose.daily.ForecastScreen
 
 @Composable
 fun ComposeApp() {
@@ -26,10 +26,24 @@ fun ComposeApp() {
                 }
             )
         }
+        composable(
+            route = "${Route.HOURLY_FORECAST}/{${Argument.DATE}}",
+            arguments = listOf(
+                navArgument(Argument.DATE) {
+                    type = NavType.StringType
+                }
+            ),
+        ) {
+//            DetailsScreen()
+        }
     }
 }
 
 object Route {
     const val DAILY_FORECAST = "daily"
     const val HOURLY_FORECAST = "hourly"
+}
+
+object Argument {
+    const val DATE = "date"
 }

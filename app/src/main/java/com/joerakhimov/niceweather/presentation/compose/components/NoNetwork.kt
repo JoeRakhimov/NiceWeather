@@ -1,4 +1,4 @@
-package com.joerakhimov.niceweather.presentation.ui.components
+package com.joerakhimov.niceweather.presentation.compose.components
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
